@@ -1,6 +1,8 @@
 Local development history of FirstLook (git log, newest first).
 The GitHub copy was uploaded through the web interface, so this file preserves the original commit sequence.
 
+2026-11-25 19:07  38f6f94  Figure 1: MRI-fail block to Step 3; backend to Condition A
+2026-11-25 18:32  c77456e  Update commit history
 2026-11-25 18:32  673d617  Storyboard script: repository-relative default paths
 2026-11-25 18:32  fe95abf  Update commit history
 2026-11-25 18:32  0c59401  Training scripts: generic project path

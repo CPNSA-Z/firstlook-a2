@@ -10,7 +10,7 @@
 <path d="M690,147.0 L780,147 L780,145 L830,145.0" fill="none" stroke="#444" stroke-width="1.7" stroke-dasharray="" marker-end="url(#ar)" />
 <text x="700" y="138" font-size="12.5" fill="#444" font-style="italic">input alerts</text>
 <path d="M305,381.8 L395,382 L395,329 L430,329.0" fill="none" stroke="#444" stroke-width="1.7" stroke-dasharray="" marker-end="url(#ar)" />
-<text x="300" y="420" font-size="12.5" fill="#444" font-style="italic">scores · SHAP · map</text>
+<text x="402" y="418" font-size="12.5" fill="#444" font-style="italic">scores · SHAP · map</text>
 <path d="M690,320.3 L830,334.1" fill="none" stroke="#c55a11" stroke-width="1.7" stroke-dasharray="" marker-end="url(#aro)" />
 <text x="700" y="312" font-size="12.5" fill="#c55a11" font-style="italic">only after Step 2</text>
 <path d="M305,520.3 L400,520 L400,470 L430,469.98" fill="none" stroke="#7030a0" stroke-width="1.7" stroke-dasharray="" marker-end="url(#arp)" />
@@ -21,6 +21,10 @@
 <text x="336" y="600" font-size="12.5" fill="#7030a0" font-style="italic">question / answer</text>
 <path d="M830,745.0 L760,745 L760,660 L690,661.8" fill="none" stroke="#c55a11" stroke-width="1.7" stroke-dasharray="" marker-end="url(#aro)" marker-start="url(#aro)"/>
 <text x="766" y="700" font-size="12.5" fill="#c55a11" font-style="italic">question / answer</text>
+<path d="M690,169.2 L765,169 L765,312 L830,312.4" fill="none" stroke="#444" stroke-width="1.7" stroke-dasharray="" marker-end="url(#ar)" />
+<text x="636" y="250" font-size="12.5" fill="#444" font-style="italic">block (MRI fail)</text>
+<path d="M305,400.3 L360,400 L360,575 L800,575 L800,641 L830,641.0" fill="none" stroke="#444" stroke-width="1.7" stroke-dasharray="" marker-end="url(#ar)" />
+<text x="480" y="568" font-size="12.5" fill="#444" font-style="italic">same backend</text>
 <path d="M960.0,90 L960.0,120" fill="none" stroke="#444" stroke-width="2.2" stroke-dasharray="" marker-end="url(#ar)" />
 <path d="M960.0,170 L960.0,200" fill="none" stroke="#444" stroke-width="2.2" stroke-dasharray="" marker-end="url(#ar)" />
 <path d="M960.0,262 L960.0,300" fill="none" stroke="#444" stroke-width="2.2" stroke-dasharray="" marker-end="url(#ar)" />
