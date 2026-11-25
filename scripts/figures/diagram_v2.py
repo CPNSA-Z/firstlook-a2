@@ -31,7 +31,7 @@ L = {
   chat=['Ask the AI assistant (floating)'], doc='Clinician',
   e_rec='record + scan', e_alert='input alerts', e_sc='scores · SHAP · map', e_after='only after Step 2',
   e_json='proposed JSON', e_expl='checked explanation', e_qa='question / answer', e_ask='asks',
-  e_judge='judges', e_dec='decides', e_samelog='same log',
+  e_judge='judges', e_block='block (MRI fail)', e_A='same backend', e_dec='decides', e_samelog='same log',
   leg=['Implemented', 'External live call', 'Isolation gate'], leg_p='blue = person action'),
  'zh': dict(
   font='Noto Sans CJK SC,Source Han Sans SC,Microsoft YaHei,sans-serif',
@@ -53,7 +53,7 @@ L = {
   chat=['AI 助手浮窗'], doc='医生',
   e_rec='病历 + 扫描', e_alert='输入提醒', e_sc='分数 · SHAP · 热图', e_after='仅在第 2 步之后',
   e_json='LLM 提议的 JSON', e_expl='校验后的解释', e_qa='提问 / 回答', e_ask='提问',
-  e_judge='判断', e_dec='决定', e_samelog='同一日志',
+  e_judge='判断', e_block='扫描失败即阻断', e_A='同一后端', e_dec='决定', e_samelog='同一日志',
   leg=['已实现', '外部实时调用', '隔离关卡'], leg_p='蓝色 = 人的操作'),
 }
 
@@ -80,12 +80,14 @@ def build(lang):
      ([(30, 97), (30, 367), m('inf', 'l')], None, None, 'impl', False),
      ([m('inf', 'r', .3), (380, 352), (380, 147), m('chk', 'l')], 'e_rec', (386, 250), 'impl', False),
      ([m('chk', 'r'), (780, 147), (780, 145), m('s1', 'l')], 'e_alert', (700, 138), 'impl', False),
-     ([m('inf', 'r', .7), (395, 382), (395, 329), m('unc', 'l')], 'e_sc', (300, 420), 'impl', False),
+     ([m('inf', 'r', .7), (395, 382), (395, 329), m('unc', 'l')], 'e_sc', (402, 418), 'impl', False),
      ([m('unc', 'r', .35), m('s3', 'l', .55)], 'e_after', (700, 312), 'gate', False),
      ([m('llm', 'r', .35), (400, 520), (400, 470), m('val', 'l', .27)], 'e_json', (316, 512), 'ext', False),
      ([m('val', 'r', .35), (790, 476), (790, 350), m('s3', 'l', .8)], 'e_expl', (694, 497), 'impl', False),
      ([m('gate', 'l'), (330, 647), (330, 540), m('llm', 'r', .7)], 'e_qa', (336, 600), 'ext', True),
      ([m('chat', 'l'), (760, 745), (760, 660), m('gate', 'r', .7)], 'e_qa', (766, 700), 'gate', True),
+     ([m('chk', 'r', .8), (765, 169), (765, 312), m('s3', 'l', .2)], 'e_block', (636, 250), 'impl', False),
+     ([m('inf', 'r', .95), (360, 400), (360, 575), (800, 575), (800, 641), m('A', 'l')], 'e_A', (480, 568), 'impl', False),
      ([m('s0', 'b'), m('s1', 't')], None, None, 'ui', False), ([m('s1', 'b'), m('s2', 't')], None, None, 'ui', False),
      ([m('s2', 'b'), m('s3', 't')], None, None, 'ui', False), ([m('s3', 'b'), m('s4', 't')], None, None, 'ui', False),
      ([m('s4', 'b'), m('log', 't')], None, None, 'impl', False),
