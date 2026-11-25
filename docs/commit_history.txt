@@ -1,0 +1,74 @@
+Local development history of FirstLook (git log, newest first).
+The GitHub copy was uploaded through the web interface, so this file preserves the original commit sequence.
+
+2026-11-25 18:32  673d617  Storyboard script: repository-relative default paths
+2026-11-25 18:32  fe95abf  Update commit history
+2026-11-25 18:32  0c59401  Training scripts: generic project path
+2026-11-25 18:05  67fff7d  Update commit history
+2026-11-25 18:05  9f7ba76  Public repository: CPNSA-Z/firstlook-a2
+2026-11-25 17:23  caf5554  Update commit history
+2026-11-25 17:23  5d06b64  Docs: Global CDR is mentioned only in the report
+2026-11-25 17:17  1775c97  Update commit history
+2026-11-25 17:17  a781abc  Global CDR mentioned once, in a closing note, in each document; Figure 1 without CDR
+2026-11-25 16:29  536dc2b  Trailing newline in the diagram SVG (matches GitHub)
+2026-11-25 16:26  d8d1049  Update commit history
+2026-11-25 16:26  2126fce  README and Figure 1: describe what exists; no planned work
+2026-11-25 16:12  6210106  Update commit history
+2026-11-25 16:12  b06c1bf  README: AI assistance wording, corrections; Chinese README
+2026-11-25 15:36  e56c56e  Update commit history
+2026-11-25 15:36  96d881e  Keep storyboards and screenshots with ADNI scans out of the public repository
+2026-11-25 15:24  6948143  Update commit history
+2026-11-25 15:23  91ee895  Remove the offline mode; checks reject claims that the model cannot see the scan; real-run screenshots
+2026-11-25 15:02  7aa24a1  Storyboards rebuilt from screenshots of a real local run
+2026-11-25 14:29  05d1db6  Explanation checks: accept record/chart labels for inputs; allow negated statements about non-inputs
+2026-11-25 14:24  3b68ae3  Explanation: mark non-model fields, give distance from 0.5, reject claims that non-inputs were used
+2026-11-25 14:19  81015c8  Detect when the local LLM thinks through its whole budget: retry once with more tokens, explain the real cause
+2026-11-25 14:04  5fa9b62  Update commit history
+2026-11-25 14:04  8a58c81  Script for the test-procedure screenshots
+2026-11-25 13:57  b68145e  Regenerate button for the LLM explanation; model name no longer shown on screen
+2026-11-25 05:52  8869d35  Update commit history
+2026-11-25 05:52  30c7fd7  README: update prose word count
+2026-11-25 05:42  ef3da94  Update commit history
+2026-11-25 05:42  f3e1360  New Figure 1 and storyboards (doctor-first, pseudonymised), display pseudonyms, number check fix, README
+2026-11-25 05:15  e58b0aa  Stored LLM explanations for demo cases (re-validated on load), refresh script writes both caches, lighter uncertainty options, tests for logging and upload ensemble
+2026-11-25 05:12  fd39113  Update commit history
+2026-11-25 05:12  2206006  Review fixes: ensemble estimate for uploads, structured and validated explanation, note evidence for free text, grounded assistant, uncertainty gate before View AI, Uncertain final option, assumed-input alerts, AD vs non-AD wording
+2026-11-25 04:25  344cd24  Update commit history
+2026-11-25 04:25  3a18115  Production wording: remove dataset names, random ID, research badges and internal labels from the screens
+2026-11-25 04:22  3b484b2  Update commit history
+2026-11-25 04:22  1780b29  Search page (image ID + optional MRI upload, background, loading overlay); upload endpoint; side panel toggle restored
+2026-11-25 04:01  28455df  Run script: also look for the ADNI export next to the script
+2026-11-25 03:58  3c7c3d6  Update commit history
+2026-11-25 03:58  d36d23f  Server: rebuild patient table when the ADNI export appears; run script shows the LAN address
+2026-11-25 03:42  8b57f15  Update commit history
+2026-11-25 03:42  775d39b  Server run script: no fatal stderr in Windows PowerShell, exit-code checks, CUDA 12.8 PyTorch for RTX 50-series
+2026-11-25 03:39  6dd6f0c  Update commit history
+2026-11-25 03:39  9c2181f  UI: call the language model 'local LLM' (any OpenAI-compatible or private model), not Qwen
+2026-11-25 03:30  b0d1b1c  Update commit history
+2026-11-25 03:30  a6b385c  Server: build patient table and load models at startup
+2026-11-25 03:29  937dfbf  Update commit history
+2026-11-25 03:29  ad84bdd  Patient table from the ADNI export (real units, exact match with model inputs); seventh input is GDS not NPI-Q; label is AD group vs rest
+2026-11-25 03:16  607c70a  Update commit history
+2026-11-25 03:16  8399748  Disable Global CDR (database, display, model input set to cohort mean); GPU out-of-memory fallback to CPU; relative paths in server run script
+2026-11-25 03:00  5a90e02  Update commit history file
+2026-11-25 02:59  2114db6  Doctor-first redesign: image-ID lookup, real cohort via inference service, View AI analysis, SHAP/Grad-CAM/Qwen panel, floating assistant
+2026-11-25 02:37  133e7fd  LLM: switch off reasoning for Qwen-style models, cap tokens, no silent retries, run live call in background
+2026-11-25 02:17  ef96067  LLM: put status last in the schema and let the system decide it; show raw reply; add debug_llm.py
+2026-11-24 20:10  b0d5986  Rename the reused training-scripts folder to model_training, translate Chinese comments in training scripts, reword docs as this project's model
+2026-11-24 19:27  a53389d  logs/: replace empty .gitkeep with a short README (web upload rejects empty files)
+2026-11-24 19:19  b5964a6  Add commit history for web-uploaded copy
+2026-11-24 19:17  79cc443  Regenerate Figure 1 (input vs uncertainty checks, MRI block arrow), screenshots and storyboards; README development record item 10
+2026-11-24 19:12  470533f  Split checks: input_checks (Step 1, record only) and model_checks (Step 3); add no-leak tests
+2026-11-24 17:42  befbf35  Correct model inputs after checking training file: CDR is an input, GDS is not; rewrite C3, docs and figures
+2026-11-24 04:02  a720963  README: record leakage check against final checkpoints
+2026-11-24 04:02  95033aa  Add model training scripts with notes (zero-volume fallback, CDR leakage check)
+2026-11-24 03:53  b6016d2  Update screenshots, storyboards, diagram and README for MRI and new layout
+2026-11-24 03:53  0046e72  Restyle UI as clinical review screen and show MRI in both conditions
+2026-11-24 03:53  0cd219d  Add MRI panels: MNI152 template slices with simulated attribution maps; blank volume for C4
+2026-11-24 03:39  3afde84  Add README with status, setup, development record and AI use
+2026-11-24 03:39  bede7dc  Add system diagram, storyboards and screenshots with build scripts
+2026-11-24 03:39  447b0c5  Add tests for scope rules and LLM output validation
+2026-11-24 03:39  df240f8  Add Streamlit UI: Condition A baseline and 4-step uncertainty-first Condition B
+2026-11-24 03:39  506011f  Add local-LLM evidence structurer with schema, quote validation and cached fallback
+2026-11-24 03:39  225dfbb  Add rule-based scope checks incl. blocking rule for failed MRI load
+2026-11-24 03:39  bda7bd8  Add synthetic vignettes and fold-range model adapter (simulated replay)
